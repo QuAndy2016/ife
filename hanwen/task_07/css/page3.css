@@ -1,0 +1,147 @@
+.page3-world{
+  height: 565px;
+  width: 100%;
+}
+.page3-world-left{
+  width: 66.6%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.page3-world-left-img{
+  width: 100%;
+  background: url('../images/scroll-thumb.jpg') no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.page3-world-left-text{
+  position: absolute;
+  top:25%;
+  left:35%;
+  color: #fff;
+}
+.page3-world-left-text h2{
+  font-weight: normal;
+  height: 50px;
+  line-height: 50px;
+  font-size: 4em;
+
+}
+.page3-world-left-text h1{
+  height: 100px;
+  line-height: 100px;
+  font-size: 8em;
+}
+.page3-world-left-text p{
+  height: 20px;
+  line-height: 20px;
+}
+/*右侧部分*/
+.page3-world-right{
+  width: 33.3%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+.page3-world-right-text{
+  width: 80%;
+  top:120px;
+  margin: 0 auto;
+  height: 45%;
+}
+.page3-world-right-text h2{
+  margin-top: 120px;
+  color: #636162;
+  font-size: 2em;
+  height: 50px;
+  line-height: 50px;
+}
+.page3-world-right-text h2 span{
+  color: #E84E4C;
+}
+.page3-world-right-text p{
+  color: #636162;
+  text-align:left;
+  text-indent: 2em;
+  height: 20px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.page3-world-right-link button{
+  border: 1px solid #E84E4C;
+  background: #fff;
+width: 110px;
+height: 32px;
+color: #E84E4C;
+}
+.page3-world-right-link a{
+  height: 10px;
+  display: block;
+  margin-top: 40px;
+  margin-left:42%;
+}
+.page3-world-right-link span{
+border: 1px solid #636162;
+border-radius: 50%;
+height: 10px;
+width: 10px;
+display: block;
+float: left;
+margin-right: 15px;
+}
+.page3-world-right-link span.on{
+  border: 1px solid #fff;
+  background: #636162;
+}
+/*新时代*/
+.page3-age{
+  height: 520px;
+  width: 100%
+}
+.page3-age-block{
+  height: 100%;
+  width: 33.3%;
+  float: left;
+}
+#page3-age-left{
+  background: #e7504d;
+}
+#page3-age-right{
+  background: url('../images/section-tab-item-thr.jpg') no-repeat;
+  background-size: cover;
+}
+.page3-age-text{
+  margin-top: 35%;
+}
+.page3-age-text p{
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+#page3-age-left p{
+    color: #fff;
+}
+.page3-age-text hr{
+  width: 30px;
+  margin: 20px auto;
+  border: 1px solid #e7504d;
+}
+#page3-age-left hr{
+  border: 1px solid #fff;
+}
+#page3-age-left button{
+  width: 160px;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background: #e7504d;
+  color: #fff;
+}
+#page3-age-middle button{
+  width: 160px;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #e7504d;
+  background: #fff;
+  color: #e7504d;
+}

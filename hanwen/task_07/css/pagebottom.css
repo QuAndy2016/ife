@@ -1,0 +1,96 @@
+.bottom-join{
+  width: 100%;
+  height: 100px;
+  padding: 100px 0;
+}
+.bottom-join h1{
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;;
+}
+.bottom-join p{
+  width: 32%;
+  margin: 0 auto;
+  height: 30px;line-height: 30px;
+  color: #636162;
+}
+.bottom-join hr{
+  width: 30px;
+  margin: 20px auto;
+  border: 1px solid #e7504d;
+}
+/*//志愿者协议*/
+.bottom-contact{
+  width: 80%;
+  height: 430px;
+  margin: 0 auto;
+}
+.bottom-contact-left{
+  width: 30%;
+  float: left;
+}
+.bottom-contact-right{
+  width: 70%;
+  float: right;
+}
+.bottom-contact-left-text{
+  height: 106px;
+  position: relative;
+}
+.bottom-contact-left-text:last-child{
+  height: 62px;
+}
+.bottom-contact-left-text p{
+  text-align:left;
+}
+.bottom-contact-left-text h3{
+  text-align:left;
+}
+.bottom-contact-left-text a{
+  color: #231916;
+}
+.bottom-contact-left-text h3{
+  height: 38px;
+  line-height: 38px;
+}
+.bottom-contact-left-text p{
+  color: #636162;
+  height: 18px;
+  line-height: 18px;
+}
+.bottom-contact-left-link{
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+/*/志愿者表格部分*/
+
+.bottom-contact-form input{
+width: 40%;
+height: 40px;
+border: none;
+background: #ededee;
+margin: 10px 10px;
+color: #231916;
+text-align: left;
+text-indent: 1em;
+}
+.bottom-contact-form textarea{
+margin: 10px auto;;
+border: none;
+background: #ededee;
+width:83%;
+height: 75px;
+left: 20%;
+display: block;
+text-align: left;
+text-indent: 1em;
+padding: 10px 0;
+}
+.bottom-contact-form button{
+  width:83%;
+  margin: 0 auto;
+  border: none;
+  height: 28px;
+}

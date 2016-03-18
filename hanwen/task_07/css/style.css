@@ -61,7 +61,10 @@ font-weight: bold;
   float: left;
   /*margin-left: 50px;*/
   width: 96px;
-  height: 56px;
+  height: 54px;
+}
+.page1-header-right li.active{
+  border-bottom: 4px solid #E74F4D;
 }
 .page1-header-right li:hover {
   border-bottom: 4px solid #E74F4D;
@@ -134,13 +137,13 @@ background: #E7504D;
   /*overflow: hidden;*/
 }
 .page1-bottom a{
-  background: url('../images/icon.png') no-repeat;
-margin: 50px 0;
+  /*background: url('../images/icon.png') no-repeat;*/
+  margin: 50px 0;
   height: 50px;
   width: 100%;
   display: block;
 }
-#icon-1{
+/*#icon-1{
     background-position: 55px -30px;
 }
 #icon-2{
@@ -151,7 +154,7 @@ margin: 50px 0;
 }
 #icon-4{
     background-position: -885px -30px;
-}
+}*/
 
 .page1-bottom p{
   font-size: 1.2em;

@@ -87,16 +87,19 @@ height: 30px;
 line-height: 30px;
 text-align: left;
 text-indent: 2em;
+cursor: pointer;
 }
 .province-drop li.active{
 background-color: #BE4F48;
 }
-
+.province-drop li:hover{
+background-color: #BE4F48;
+}
 /*画框展示部分*/
 .page2-bottom{
   height: 400px;
   background-color: #EDEDEC;
-  padding: 50px 0;
+  padding: 8% 0;
 }
 .page2-bottom-display{
   float: left;
@@ -112,7 +115,7 @@ background-color: #BE4F48;
   border: 1px solid #d0ccca;
 }
 .page2-bottom-content{
-  width: 80%;
+  width: 72%;
   height: 100%;
   margin: 0 auto;
 }

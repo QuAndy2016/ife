@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 html, body {
-  min-width: 900px;
+  min-width: 800px;
   width: 100%;
   font-size: 12px;
   font-family: Arial, "Hiragino Sans GB W3", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -25,13 +25,10 @@ ul {
 .page1-header-left {
   float: left;
   position: relative;
-  left: 100px;
+  left: 7.4%;
   height: 56px;
   line-height: 56px;
   background: url(../images/logo.png) no-repeat center left;
-}
-.page1-header-left img{
-
 }
 .page1-header-left a{
   margin-left:50px;
@@ -42,7 +39,7 @@ font-weight: bold;
 .page1-header-right {
   position: relative;
   float: right;
-  right: 100px;
+  right: 6%;
   height: 56px;
   line-height: 56px;
 }

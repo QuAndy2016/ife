@@ -109,6 +109,7 @@ margin-right: 15px;
 #page3-age-right{
   background: url('../images/section-tab-item-thr.jpg') no-repeat;
   background-size: cover;
+  position: relative;
 }
 .page3-age-text{
   margin-top: 35%;
@@ -137,6 +138,11 @@ margin-right: 15px;
   background: #e7504d;
   color: #fff;
 }
+#page3-age-left button:hover{
+  border: 1px solid #e7504d;
+  background: #fff;
+  color: #e7504d;
+}
 #page3-age-middle button{
   width: 160px;
   height: 40px;
@@ -144,4 +150,26 @@ margin-right: 15px;
   border: 1px solid #e7504d;
   background: #fff;
   color: #e7504d;
+}
+#page3-age-middle button:hover{
+  border: 1px solid #fff;
+  background: #e7504d;
+  color: #fff;
+}
+.trangle{
+            width: 0;
+            height:0;
+            border-style: solid;
+            border-width:20px ;
+        }
+.page3-age-block .trangle{
+  border-color:transparent transparent transparent  #fff ;
+  position: absolute;
+  top:250px;
+}
+.page3-world-left .trangle{
+  border-color:transparent #fff transparent transparent   ;
+  position: absolute;
+  top:250px;
+  right: 0;
 }

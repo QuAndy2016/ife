@@ -75,7 +75,11 @@
   width: 98.8%;
   border: 1px solid #BE4F48;
   background-color: #E3E3E4;
-  height: 200px;
+display: none;
+  height: 180px;
+}
+.province:hover .province-drop{
+display: block;
 }
 .province-drop ul{
 height: 30px;

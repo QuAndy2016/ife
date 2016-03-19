@@ -58,6 +58,10 @@
   height: 18px;
   line-height: 18px;
 }
+.bottom-contact-left-link i{
+margin-right: 5px;
+color: #a6a6a7
+}
 .bottom-contact-left-link{
   position: absolute;
   right: 10px;

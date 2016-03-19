@@ -1,0 +1,168 @@
+@import '_pc_reset.scss';
+
+
+
+$wrapboxWidth:1000px;
+
+
+
+$bodyBg:#2b2f3d;
+$headerBg:#2289bf;
+$searchBg:#388ac1;
+$timerItemBorder:#388ac1;
+$timerItemFontColor:#ec6500;
+$timerItemIconColor:#abaaaa;
+
+$statisticsItemColor1:#44b29e;
+$statisticsItemColor2:#388ac1;
+$statisticsItemColor3:#d04b36;
+$statisticsItemColor4:#e2cd47;
+
+
+$panelTitle:#f4f5f6;
+$panelBorderColor:#bdbabf;
+$tabTitle:#ededf0;
+
+
+
+$containerRightBg:#eeeeed;
+$lightFontColor:#abaaaa;
+$darkFontColor:#333333;
+
+
+$containerLeftLightFontColor:#6e8095;
+$containerLeftLightBg:#393d4e;
+
+
+$curentMenuFontColor:#6898c2;
+
+
+
+body{
+	background: $bodyBg;
+}
+
+#header{
+	height: 56px;
+	background: $headerBg;
+	position: relative;
+	h1{
+		width: 40px;
+		height: 40px;
+		background: url(../images/sprite.png) no-repeat -53px -58px;
+		float: left;
+		position: relative;
+		text-indent: -9999em;
+		margin-top: 12px;
+		margin-left: 50px;
+	}
+
+	.user-action{
+		float: right;
+		padding-right: 90px;
+
+		.search{
+			position: relative;
+			margin-top: 10px;
+			float: left;
+			background: url(../images/sprite.png) no-repeat -52px -262px;
+			width: 320px;
+			height: 36px;
+
+			#search-input{
+				position: absolute;
+				width: 250px;
+				height: 20px;
+				line-height: 20px;
+				right: 20px;
+				top: 8px;
+				border: none;
+				background: none;
+			}
+
+			#serach-submit{
+				position: absolute;
+				width: 50px;
+				height: 30px;
+				top: 2px;
+				left: 0px;
+				background: none;
+				border: none;
+			}
+		}
+
+		.user-login{
+			float: right;
+			font-size: 12px;
+			color: #FFF;
+			height: 56px;
+			line-height: 56px;
+			position: relative;
+			padding-left: 25px;
+			margin-left: 15px;
+			i{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: url(../images/sprite.png) no-repeat -177px -60px;
+				position: absolute;
+				top: 15px;
+				left: 0;
+			}
+			a{
+				color: #FFF;
+			}
+		}
+	}
+}
+
+#container{
+	#container-wrap{
+		
+		#container-nav{
+			position: absolute;
+			width: 215px;
+		}
+		#container-main{
+			height: 1200px;
+			background: $containerRightBg;
+			margin-left: 215px;
+
+			.main-header-nav{
+				height: 30px;
+				line-height: 30px;
+				background: #FFF;
+				color: $lightFontColor;
+				padding-left: 30px;
+				span{
+					color: $lightFontColor;
+					&.curent{
+						color: $curentMenuFontColor;
+					}
+
+					a{
+						color: $lightFontColor;
+					}
+				}
+
+			}
+		}
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixin.scss";
 header {
     height: $header-height;
     width: 100%;
@@ -10,6 +11,7 @@ header {
 
 .nav {
     margin: 0 auto;
+    @include clearfix;
     width: $header__nav--width;
     height: auto;
     color: white;

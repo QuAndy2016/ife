@@ -47,6 +47,10 @@ header {
   width: 1280px;
   height: auto;
   color: white; }
+  .nav:after {
+    content: "";
+    display: table;
+    clear: both; }
   .nav__logo {
     margin-top: 10px;
     margin-bottom: 10px;

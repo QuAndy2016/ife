@@ -1,0 +1,95 @@
+.wrapper {
+    &__statistics {
+        border: 0 !important;
+        top: 25px;
+        h3 {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+        }
+        ul {
+            width: inherit;
+            // border: 1px solid black;
+            height: 72px;
+            >li {
+                float: left;
+                box-sizing: border-box;
+                background: {
+                    color: white;
+                }
+                border: {
+                    left: 4px solid;
+                    right: 1px solid #d7d5d6;
+                    bottom: 1px solid #d7d5d6;
+                    top: 1px solid #d7d5d6;
+                }
+                width: 204px;
+                margin: {
+                    right: 25.5px;
+                }
+                padding: {
+                    top: 13px;
+                }
+                height:inherit;
+                div {
+                    height: inherit;
+                    float: left;
+                    width: auto;
+                    margin: {
+                        left: 9px;
+                    }
+                    // line-height:47px;
+                }
+                .number {
+                    color: black;
+                    line-height: 23px;
+                    font-size: 1.0rem;
+                }
+                ;
+                .phase {
+                    color: #b1b0b0;
+                    line-height: 27px;
+                    font-size: 1.2rem;
+                }
+                .rect {
+                    height: 47px;
+                    width: 61px;
+                    border: 0px;
+                    margin: {
+                        left: 77px;
+                    }
+                }
+                &:nth-child(1) {
+                    border-left-color: #00b49e;
+                    .rect{
+                    	background-color:#00b49e;
+                    }
+                };
+                &:nth-child(2) {
+                    border-left-color: #008dbe;
+                    .rect{
+                    	background-color:#008dbe;
+                    }
+                };
+                &:nth-child(3) {
+                    border-left-color: #dc423c;
+                    .rect{
+                    	background-color:#dc423c;
+                    }
+                };
+                
+
+                &:last-child {
+                    margin: {
+                        right: (0 !important);
+                    }
+                    border-left-color:#e7cb5a;
+                    .rect{
+                    	background-color:#e7cb5a;
+                    }
+
+                }
+              
+            }
+        }
+    }
+}

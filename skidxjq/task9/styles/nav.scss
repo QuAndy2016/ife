@@ -1,0 +1,67 @@
+@import "variables.scss";
+@import "extend.scss";
+@import "mixin.scss";
+nav {
+    min-width: 1000px;
+    min-height: 31px;
+    margin:{
+    	top:-1px;
+    }
+    float: left;
+    padding: {
+        bottom: 2px;
+    }
+    font-size: 1.228rem;
+    line-height: 1.228rem;
+    color: #abaaaa;
+    background: {
+        color: white;
+    }
+    ;
+    span {
+        float: left;
+        font-size: 1.228rem;
+        margin: {
+            left: 31px;
+            top: 10px;
+            right: 12px;
+        }
+        // vertical-align:middle;
+    }
+}
+
+.nav {
+    &__ul {
+        // margin: 10px;
+        width: 400px;
+        margin: {
+            top: 10px;
+            right: 12px;
+        }
+        li {
+            float: left;
+            position: relative;
+            color: #abaaaa;
+            margin: {
+                left: 15px;
+                right: 10px;
+            }
+            cursor:pointer;
+            &:hover {
+                // font-weight: normal;
+                font-weight: normal;
+                color: #5b9abf;
+            }
+            &:before {
+                content: "/";
+                color: #aaa;
+                position: absolute;
+                left: -14px;
+                cursor: default;
+            }
+            &:last-child {
+                color: #5b9abf;
+            }
+        }
+    }
+}

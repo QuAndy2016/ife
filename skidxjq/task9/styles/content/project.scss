@@ -1,0 +1,193 @@
+@import "../mixin.scss";
+@import "../extend.scss";
+.wrapper {
+    &__project {
+        // position:relative;
+        // top:33px;
+        height: 358px;
+        top: 39px;
+        border: 0 !important;
+        border-radius: 5px;
+        width: inherit;
+        &--col1 {
+            width: 531px;
+            .col1 {
+                &__content {
+                    // height:300px;
+                    &--tab {
+                        @include clearfix;
+                        ul {
+                            // float: left;
+                        }
+                        li {
+                            box-sizing: border-box;
+                            display: -webkit-box;
+                            z-index: 2;
+                            -webkit-box-pack: center;
+                            -webkit-box-align: center;
+                            float: left;
+                            width: 83px;
+                            height: 29px;
+                            margin: {
+                                right: 5px;
+                            }
+                            border:1px solid #ededf0;
+                            color:#535354;
+                            border-radius: 5px 5px 0 0;
+                            background: {
+                                color: #ededef;
+                            }
+                            &.active,
+                            &:hover {
+                                background: {
+                                    color: white;
+                                }
+                                border-bottom: {
+                                    width: 2px;
+                                    color: white;
+                                }
+                            }
+                            // border:1px solid black;
+                        }
+                    }
+                    &--table {
+                        @include clearfix;
+                        // display: -webkit-box;
+                        // -webkit-box-pack: center;
+                        // -webkit-box-align: center;
+                        width: 490px;
+                        margin-top: -1px;
+                        border: 1px solid #dddddd;
+                        border-radius: 0 0 5px 5px;
+                        height: 251px;
+                        table {
+                            margin: auto auto;
+                            margin: {
+                                top: 29px;
+                            }
+                            border-collapse: collapse;
+                            tr {
+                                td {
+                                    height: 29px;
+                                    width: 101px;
+                                    text-align: center;
+                                    color: #53536b;
+                                    font-size: 1.2rem;
+                                    &.active,
+                                    &:hover {
+                                        background: {
+                                            color: #f4f5f6;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--col2 {
+            float: right;
+            width: 350px;
+            height: 358px;
+            margin-left:7px;
+            .col2 {
+                &__content {
+                    height: 322px;
+                    box-sizing: border-box;
+                    width: inherit;
+                    padding: {
+                        top: 13px;
+                        left: 30px;
+                    }
+                    border-bottom: 1px solid #dddddd;
+                    border-radius: 0 0 5px 5px;
+                    li {
+                        box-sizing: border-box;
+                        width: 281px;
+                        padding: {
+                            left: 18px;
+                            // bottom:10px;
+                        }
+                        &:nth-child(2) {
+                            width: 318px;
+                        }
+                        ;
+                        &:nth-child(3) {
+                            height: 146px;
+                        }
+                        &:nth-child(4) {
+                            width:inherit;
+                            border: 0px;
+                            margin:{
+                                top:5px;
+                                left:-15px;
+                            }
+                            display: -webkit-box;
+                            -webkit-box-align: center;
+                            button{
+                                margin-left:128px;
+                            }
+                        }
+                        div {
+                            // float:left;
+                            display: inline-block;
+                            padding: {
+                                right: 48px;
+                                // bottom:10px;
+                            }
+                            &:nth-child(1) {
+                                border: {
+                                    right: 1px solid #dddddd;
+                                }
+                            }
+                            &:nth-child(2) {
+                                padding: {
+                                    left: 13px;
+                                }
+                            }
+                        }
+                        border-bottom:1px solid #e9e8e8;
+                        span {
+                            color: #c3c2c2;
+                            font-size: 1.2rem;
+                            line-height: 2.2rem;
+                        }
+                        ;
+                        p {
+                            color: black;
+                            font-size: 1.2rem;
+                            padding: {
+                                bottom: 10px;
+                            }
+                            // line-height:2rem;
+                        }
+                        input[type='checkbox'] {
+                            width: 14px;
+                            height: 14px;
+                            -webkit-appearance: none;
+                            outline: none;
+                            cursor: pointer;
+                            &:checked {
+                                background: {
+                                    image: url(../images/content/icon-checkbox.png);
+                                }
+                            }
+                            background: {
+                                color: #d5d5d5;
+                                repeat: no-repeat;
+                                position: center;
+                            }
+                            margin: {
+                                right: 8px;
+                            }
+                            //     vertical-align:sub;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ;
+    margin: 0 auto
+}

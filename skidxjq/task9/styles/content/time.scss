@@ -1,0 +1,123 @@
+.wrapper {
+    &__time {
+        box-sizing: border-box;
+        position: relative;
+        top: 10px;
+        height: 67px;
+        border: 0px;
+        // float: left;
+        background: {
+            // color: white;
+        }
+        padding: {
+            top: 17px;
+            left: 0px;
+        }
+        border:0;
+        >li {
+            box-sizing: border-box;
+            text-align: center;
+            padding: {
+                // top:12px;
+                bottom: 12px;
+            }
+            height: inherit;
+            background: {
+                color: white;
+            }
+            // border:1px solid #c9c6c9;
+            border: {
+                left: 1px solid #c9c6c9;
+            }
+            border: {
+                top: 1px solid #c9c6c9;
+            }
+            float: left;
+            margin: {
+                top: -17px;
+            }
+            cursor:pointer;
+        }
+        ;
+        &--left {
+            width: 29px;
+            background: {
+                image: url("../images/content/icon-left.png");
+                position: center center;
+                repeat: no-repeat;
+            }
+        }
+        &--right {
+            width: 29px;
+            margin: {
+                left: 5px;
+            }
+            background: {
+                image: url("../images/content/icon-right.png");
+                position: center center;
+                repeat: no-repeat;
+            }
+        }
+        ;
+        &--history {
+            width: 128px;
+            height: inherit;
+            float: (right !important);
+            line-height: 65px;
+            span {
+                display: inline-block;
+                margin: {
+                    left: 8px;
+                }
+                font-size: 1.2rem;
+                color:#535354;
+            }
+        }
+        &--slide {
+            width: 111px;
+            height: 65px;
+            margin: {
+                left: 5px;
+            }
+            padding: {
+                top: 14px;
+            }
+            .time {
+                font-size: 1.2rem;
+                color: #323333;
+            }
+            .price {
+                color: #fb5d21;
+                font-size: 2.1rem;
+                margin: {
+                    left: 1px;
+                    bottom: 12px;
+                }
+                &:before {
+                    font-size: 1.5rem;
+                    content: "￥";
+                    color: #abaaaa;
+                }
+            }
+            &:hover {
+                border: {
+                    top: 4px solid #1f8bc5;
+                }
+                ;
+                padding: {
+                    top: 11px;
+                }
+                ;
+            }
+            &.active {
+                border: {
+                    top: 4px solid #1f8bc5;
+                }
+                ;
+                padding: {
+                    top: 11px;
+                }
+            }
+        }
+    }
+}

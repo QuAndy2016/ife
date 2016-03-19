@@ -1,0 +1,42 @@
+@mixin box-sizing($sizing) {
+    -webkit-box-sizing: $sizing;
+    -moz-box-sizing: $sizing;
+    box-sizing: $sizing;
+}
+
+@mixin icon-file($filename) {
+    background: {
+        image: url("../images/menu/icon-"+$filename+".png");
+        position: 0px center;
+        repeat: no-repeat;
+    }
+}
+
+@mixin progress-bar($percentage,
+$width,
+$color) {
+    width: $percentage;
+    background-color: $color;
+}
+
+@mixin m-r($pixel) {
+    margin: {
+        right: $pixel;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin makeItCenter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

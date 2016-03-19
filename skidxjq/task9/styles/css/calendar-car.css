@@ -1,0 +1,58 @@
+profile-li-base {
+  float: left;
+  width: 88px;
+  height: 28px;
+  box-sizing: border-box;
+  padding-left: 34px;
+  padding-right: 34px;
+  text-align: center; }
+  profile-li-base p {
+    min-width: 24px; }
+
+panel {
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #ced1d4; }
+
+panel-title {
+  color: #b5b5b5;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ced1d4;
+  border-radius: 5px 5px 0 0;
+  border-color: #ced1d4;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-left: 21px;
+  line-height: 40px;
+  background-color: #f4f5f6; }
+
+panel-body {
+  box-sizing: border-box;
+  background-color: white;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 28px;
+  border-radius: 0 0 5px 5px; }
+
+search-select {
+  -webkit-appearance: none;
+  font-family: "BlinkMacSystemFont";
+  background-color: white;
+  background-image: url(../images/nav/select.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  outline: none;
+  border: 1px solid #c2c3c4;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 0px;
+  vertical-align: middle; }
+
+search-label {
+  box-sizing: border-box;
+  outline: none;
+  color: #b6b5b5;
+  margin-right: 12px;
+  margin-top: -7px;
+  vertical-align: middle; }

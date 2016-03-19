@@ -1,0 +1,232 @@
+@import "variables.scss";
+@import "extend.scss";
+@import "mixin.scss";
+.menu {
+    float: left;
+    width: 260px;
+    height: 1210px;
+    background: {
+        color: #292f3d;
+    }
+}
+
+;
+.profile {
+    height: 149px;
+    &__teaminfo {
+        box-sizing: border-box;
+        height: 94px;
+        width: 143px;
+        padding: {
+            top: 18px;
+        }
+        margin: {
+            left: 45px;
+        }
+        ;
+        &--circleRing {
+            float: left;
+            height: 56px;
+            width: 56px;
+            border: 1px solid #b2aaad;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        &--circleInside {
+            display: inline-block;
+            margin: {
+                left: 3px;
+                top: 2.5px;
+            }
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border:none;
+            background: {
+                color: #b2aaad;
+            }
+        }
+        &--teamName {
+            float: left;
+            height: 57px;
+            line-height: 57px;
+            margin: {
+                left: 19px;
+            }
+            display:inline-block;
+            font-size:1.6rem;
+            color:white;
+            // vertical-align:middle;
+        }
+    }
+    ;
+    &__statistics {
+        float: left;
+        margin: {
+            left: 29px;
+            // right:55px;
+        }
+        height: 56px;
+        // width: 143px;
+        font-size:1.6rem;
+        color:#6e8095;
+        &--collection {
+            @extend profile-li-base;
+            border: {
+                right: 2px solid #303645;
+            }
+        }
+        ;
+        &--fans {
+            @extend profile-li-base;
+            // margin:
+        }
+    }
+    ;
+}
+
+;
+.menuList {
+    width: inherit;
+    height: 191px;
+    box-sizing: border-box;
+    li {
+        font-size: 1.2rem;
+        &:hover {
+            color: white;
+            font-weight: 600;
+        }
+        ;
+    }
+    &__subList {
+        margin-left: 24px;
+        &--li {
+            height: auto;
+            margin: {
+                top: 19px;
+            }
+            ;
+        }
+        ;
+        &--ul {
+            display: block;
+            // height:50px;
+            margin: {
+                top: 15px;
+                left: 38px;
+            }
+            >li {
+                margin: {
+                    bottom: 16px;
+                }
+            }
+        }
+    }
+}
+
+;
+.item {
+    height: 14px;
+    @include box-sizing("border-box");
+    padding: {
+        top: 16px;
+        bottom: 16px;
+        left: 45px;
+    }
+    .icon {
+        float: left;
+        width: 12px;
+        height: inherit;
+        margin: {
+            right: 11px;
+        }
+        color:white;
+        // content: ".";
+        // visibility: hidden;
+    }
+    .two-icon {
+        float: left;
+        width: 28px;
+        height: inherit;
+        margin: {
+            right: 11px;
+        }
+        color:white;
+        // content: ".";
+        // visibility: hidden;
+    }
+    span {
+        vertical-align: top;
+    }
+}
+
+.icon-star {
+    @include icon-file("star");
+}
+
+.icon-book {
+    @include icon-file("book");
+}
+
+.icon-upload {
+    @include icon-file("upload");
+}
+
+.icon-sheet {
+    @include icon-file("sheet");
+}
+
+.icon-arrow-right {
+    @include icon-file("arrow-right");
+    margin: {
+        right: (9px !important);
+    }
+}
+
+.icon-arrow-down {
+    @include icon-file("arrow-down");
+    margin: {
+        right: (9px !important);
+    }
+}
+
+.icon-folder-a {
+    @include icon-file("folder-a");
+    margin: {
+        right: (5px !important);
+    }
+}
+
+.icon-folder-b {
+    @include icon-file("folder-b");
+    margin: {
+        right: (5px !important);
+    }
+}
+
+.icon-document-a {
+    @include icon-file("document-a");
+    margin: {
+        right: (5px !important);
+    }
+}
+
+.icon-document-b {
+    @include icon-file("document-b");
+    margin: {
+        right: (5px !important);
+        // 
+    }
+}
+
+.selected {
+    height: 191px;
+    background: {
+        color: #373E4D;
+    }
+    ;
+    .icon {
+        height: 14px;
+        vertical-align: top;
+    }
+}

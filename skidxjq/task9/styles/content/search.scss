@@ -1,0 +1,167 @@
+@import "../extend.scss";
+@import "../nav.scss";
+@import "../mixin.scss";
+.wrapper {
+    &__search {
+        box-sizing: border-box;
+        position: relative;
+        height: 88px;
+        padding: {
+            top: 17px;
+            left: 29px;
+        }
+        background: {
+            color: white;
+        }
+        &--col1 {
+            float: left;
+            label {
+                color: #b6b5b5;
+                margin: {
+                    right: 12px;
+                }
+                vertical-align:middle;
+            }
+            select {
+                box-sizing: border;
+                display: inline-block;
+                height: 24px;
+                width: 71px;
+                @extend search-select;
+            }
+            font-size: 1.2rem;
+        }
+        &--col2 {
+            // @include clearfix;
+            &-left {
+                float: left;
+                width: 164px;
+                margin: {
+                    left: 37px;
+                }
+                label {
+                    @extend search-label;
+                    display:inline-block;
+                    margin: {
+                        top: (-9px !important);
+                    };
+                    color:black;
+                    vertical-align:bottom;
+                }
+                // @extend search-select;
+                select {
+                    width: 123px;
+                    box-sizing: border;
+                    display: inline-block;
+                    height: 24px;
+                    margin: {
+                        bottom: 7px;
+                    }
+                    @extend search-select;
+                    vertical-align:top;
+                }
+            }
+            &-right {
+                float: left;
+                height: 51px;
+                // width:auto;
+                display: -webkit-box;
+                -webkit-box-align: center;
+                -webkit-box-pack: center;
+            }
+        }
+        &--col3 {
+            float: left;
+            width: 320px;
+            height: 55px;
+            margin: {
+                left: 31px;
+                // bottom:1px;
+            }
+            // &-up {
+            label {
+                display: inline-block;
+                .odd {
+                    margin: {
+                        right: 14px;
+                    }
+                }
+                .even {
+                    margin: {
+                        // left:18px;
+                        // right: (7px !important);
+                    }
+                }
+                @extend search-label;
+            }
+            input[type='text'] {
+                box-sizing: border-box;
+                width: 120px;
+                height: 25px;
+                margin: {
+                    // left:-4px;
+                    right: 12px;
+                }
+                padding: {
+                    left: 9px;
+                    top: 7px;
+                    bottom: 8px;
+                }
+                outline:none;
+                vertical-align:top;
+            }
+            select {
+                @extend search-select;
+                box-sizing: border-box;
+                &.one {
+                    margin: {
+                        left: -2px;
+                        right: 7px;
+                        bottom: 5px;
+                    }
+                    width:72px;
+                }
+                &.two {
+                    padding: {
+                        bottom: 5px;
+                    }
+                    margin: {
+                        left: 0px;
+                        right: 11px;
+                        bottom: 5px;
+                    }
+                    width:70px;
+                }
+                &.three {
+                    float: right;
+                    padding: {
+                        bottom: 5px;
+                    }
+                    margin: {
+                        left: 0px;
+                        right: 23px;
+                        bottom: 5px;
+                    }
+                    width:124px;
+                }
+                vertical-align:top;
+            }
+            // }
+        }
+        &--col4 {
+            float: left;
+            height: inherit;
+            width: 51px;
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            margin: {
+                left: 29px;
+                top: -18px;
+                bottom: 13px;
+            }
+            font-size:1.2rem;
+            
+        }
+    }
+}

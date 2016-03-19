@@ -1,0 +1,50 @@
+@import "variables.scss";
+html,
+body,
+img,
+nav,
+p,
+b,
+// td,
+label,
+select,
+table,
+h3,
+input,
+span {
+
+    
+    margin: 0;
+    padding: 0;
+    font: {
+        size: $font-size;
+        family: $font-family;
+    }
+    vertical-align:middle;
+}
+
+html,body{
+    background:{
+        color:#eeeeed;
+    }
+}
+;
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #627789;
+
+    cursor:pointer;
+}
+
+a {
+  background-color: transparent;
+  color:#eeeeed;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}

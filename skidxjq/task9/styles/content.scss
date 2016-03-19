@@ -1,0 +1,35 @@
+@import "nav.scss";
+@import "extend.scss";
+@import "content/search.scss";
+@import "content/time.scss";
+@import "content/statistics.scss";
+@import "content/project.scss";
+@import "content/calendar-car.scss";
+.content {
+    float: left;
+}
+
+.wrapper {
+    max-width: 893px;
+    // height: 86px;
+    padding: {
+        top: 51px;
+        left: 59px;
+    }
+    >div {
+        border: 1px solid #dddfe1;
+        position: relative;
+    }
+}
+
+.panel {
+    @extend panel;
+}
+.panel-title {
+    @extend panel-title;
+}
+
+.panel-body {
+    @extend panel-body;
+   
+}

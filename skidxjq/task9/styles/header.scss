@@ -1,0 +1,68 @@
+@import "variables.scss";
+header {
+    height: $header-height;
+    width: 100%;
+    min-width:1280px;
+    background: {
+        color: $header-bg-color;
+    }
+}
+
+.nav {
+    margin: 0 auto;
+    width: $header__nav--width;
+    height: auto;
+    color: white;
+    &__logo {
+        margin: {
+            top: 10px;
+            bottom: 10px;
+            left: 50px;
+        }
+        float:left;
+    }
+    ;
+    &__login {
+        float: right;
+        font-size: 1.2rem;
+        vertical-align: middle;
+        margin: {
+            top: 20px;
+            right: 94px;
+            bottom: 20px;
+        }
+        ;
+        &--user {
+            display: inline-block;
+        }
+        ;
+        &--txt {
+            display: inline-block;
+            height: 16px;
+        }
+    };
+
+    &__search{
+    	display:inline-block;
+    	outline:none;
+    	border:none;
+    	padding:0;
+    	height:28px;
+    	width:313px;
+    	float:right;
+    	margin:{
+    		right:21px;
+    		top:14px;
+    		bottom:14px;
+    	};
+    	border:{
+    		radius:14px 14px 14px 14px;
+    	};
+
+    	background:{
+    		image:url('../images/header/lens.png');
+    		position:14px 5px;
+    		repeat:no-repeat;
+    	}
+    }
+}

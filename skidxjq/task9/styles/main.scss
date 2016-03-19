@@ -1,0 +1,32 @@
+@import "menu.scss";
+@import "content.scss";
+@import "mixin.scss";
+.main {
+    @include clearfix;
+    margin: 0 auto;
+    display: block;
+    // text-align:center;
+    width: 50%;
+    min-width: 1280px;
+}
+
+.clearfix {
+    @includ clearfix;
+}
+
+button {
+    color: white;
+    padding: {
+        top: 5px;
+        right: 13px;
+        bottom: 6px;
+        left: 13px;
+    }
+    background: {
+        color: #388ac1;
+    }
+    border: {
+        width: 0;
+        radius: 3px;
+    }
+}

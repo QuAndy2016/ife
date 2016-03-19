@@ -1,0 +1,285 @@
+@import "../mixin.scss";
+@import "../extend.scss";
+.wrapper {
+    &__calendar-car {
+        width: inherit;
+        position: relative;
+        height: 358px;
+        float: left;
+        // margin-left: -99.1%;
+        border: 0 !important;
+        // margin-top:100px;
+        top: 50px;
+        &--col1 {
+            float: left;
+            width: 352px;
+            .col1 {
+                &__content {
+                    &--select-time {
+                        padding: {
+                            bottom: 10px;
+                        }
+                        span {
+                            display: inline-block;
+                            height: 22px;
+                            width: 64px;
+                            border: 1px solid #cfcfc0;
+                            text-align: center;
+                            line-height: 1.8rem;
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            // vertical-align: bottom;
+                        }
+                        select {
+                            @extend search-select;
+                            box-sizing: border;
+                            display: inline-block;
+                            font-size: 1.2rem;
+                            line-height: 1.2rem;
+                            height: 24px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                            background: {
+                                color: white;
+                                image: url(../images/content/icon-triangle.png);
+                                repeat: no-repeat;
+                            }
+                            border:1px solid #cfcfc0;
+                            padding: {
+                                top: 4px;
+                                left: 4px;
+                                bottom: 4px;
+                            }
+                            ;
+                            &:nth-child(1) {
+                                width: 65px;
+                                background: {
+                                    position: 88% center;
+                                }
+                            }
+                            &:nth-child(2) {
+                                width: 84px;
+                                padding-left: 22px;
+                                background: {
+                                    position: 71% center;
+                                }
+                            }
+                            &:nth-child(3) {
+                                width: 75px;
+                                background: {
+                                    position: 90% center;
+                                }
+                            }
+                        }
+                    }
+                    &--weekday {
+                        // width: 30px;
+                        padding: {
+                            right: 16px;
+                        }
+                        ul {
+                            @include clearfix;
+                            border: {
+                                top: 1px solid #abd0eb;
+                                bottom: 1px solid #e2e3e4;
+                            }
+                            box-sizing: border-box;
+                            padding: {
+                                top: 8px;
+                                bottom: 8px;
+                            }
+                        }
+                        li {
+                            box-sizing: border-box;
+                            padding: {
+                                left: 17px;
+                            }
+                            display: inline-block;
+                            float: left;
+                            width:44.4px;
+                            color:black;
+                            // width:10px;
+                        }
+                    }
+                    &--day {
+                        box-sizing: border-box;
+                        @include clearfix;
+                        padding: {
+                            top: 1px;
+                        }
+                        margin: {
+                            bottom: -13px;
+                        }
+                        p {
+                            width: 40px;
+                            height: 40px;
+                            float: left;
+                            margin: {
+                                right: 5px;
+                                left: -2px;
+                                bottom: 2px;
+                            }
+                            text-align: center;
+                            display: inline-block;
+                            border:1px solid white;
+                            font-size: 11.36px;
+                            span {
+                                display: block;
+                                margin: {
+                                    top: 5px;
+                                }
+                                font-size: 1.136rem;
+                                // vertical-align:bottom;
+                            }
+                            b {
+                                display: block;
+                                margin: {
+                                    top: -3px;
+                                }
+                                font-weight: normal;
+                            }
+                            &:hover,
+                            &.mark {
+                                border: 1px solid #fec24d;
+                            }
+                            &.festival {
+                                b {
+                                    color: #d70025;
+                                }
+                            }
+                            &.weekend {
+                                span {
+                                    color: #d70025;
+                                }
+                            }
+                            // &.
+                        }
+                    }
+                }
+            }
+        }
+        &--col2 {
+            margin-left: 8px;
+            width: 529px;
+            .col2 {
+                &__content {
+                    // background-color: #a8a3aa;
+                    display: -webkit-box;
+                    -webkit-box-pack: center;
+                    -webkit-box-align: center;
+                    &--table {
+                        margin: {
+                            top: 6px;
+                        }
+                        tr {
+                            &:hover,
+                            &.active {
+                                background-color: #f4f5f6;
+                                cursor: pointer;
+                            }
+                            th {
+                                // height:27px;
+                                line-height: 26.5px;
+                                &:nth-child(1) {
+                                    text-align: center;
+                                }
+                                &:nth-child(2) {
+                                    text-align: left;
+                                    padding: {
+                                        left: 29px;
+                                    }
+                                }
+                                &:nth-child(3) {
+                                    text-align: left;
+                                    padding: {
+                                        left: 26px;
+                                    }
+                                }
+                            }
+                            td {
+                                box-sizing: border-box;
+                                font-size: 1.3rem;
+                                font-weight: normal;
+                                .progress-bar {
+                                    // float:left;
+                                    display: inline-block;
+                                    height: 4px;
+                                    line-height: 4px;
+                                    width: 167px;
+                                    margin: {
+                                        left: 18px;
+                                    }
+                                    background-color:#dcdcdc;
+                                    vertical-align: 0;
+                                    span {
+                                        display: inline-block;
+                                        height: inherit;
+                                        margin: {
+                                            top: -3px;
+                                        }
+                                        &.first {
+                                            //141/167
+                                            @include progress-bar(84.4%, 167, #fa6757);
+                                        }
+                                        &.second {
+                                            //121/167
+                                            @include progress-bar(72.4%, 167, #fc7b57);
+                                        }
+                                        &.third {
+                                            //97/167
+                                            @include progress-bar(58.08%, 167, #68cded);
+                                        }
+                                        &.fourth {
+                                            //86/167
+                                            @include progress-bar(51.49%, 167, #68cded);
+                                        }
+                                        &.fifth {
+                                            //79/167
+                                            @include progress-bar(47.3%, 167, #68cded);
+                                        }
+                                        &.sixth {
+                                            //74/167
+                                            @include progress-bar(44.31%, 167, #68cded);
+                                        }
+                                        &.seventh {
+                                            //74/167
+                                            @include progress-bar(44.31%, 167, #68cded);
+                                        }
+                                        &.eighth {
+                                            //64/167
+                                            @include progress-bar(38.32%, 167, #68cded);
+                                        }
+                                        &.nineth {
+                                            //59/167
+                                            @include progress-bar(35.32%, 167, #68cded);
+                                        }
+                                        &.tenth {
+                                            //55/167
+                                            @include progress-bar(32.93%, 167, #68cded);
+                                        }
+                                        // @include progress-bar(50%, 167, blue)
+                                    }
+                                }
+                                // height:21px;
+                                line-height: 19px;
+                                &:nth-child(3n+1) {
+                                    width: 67px;
+                                }
+                                &:nth-child(3n+2) {
+                                    width: 92px;
+                                }
+                                &:nth-child(3n) {
+                                    width: 290px;
+                                }
+                                padding: {
+                                    left: 29px;
+                                }
+                            }
+                        }
+                        border-collapse: collapse;
+                    }
+                }
+            }
+        }
+    }
+}

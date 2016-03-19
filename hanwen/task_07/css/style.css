@@ -5,6 +5,7 @@
   text-decoration: none;
 }
 html, body {
+  min-width: 900px;
   width: 100%;
   font-size: 12px;
   font-family: Arial, "Hiragino Sans GB W3", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;

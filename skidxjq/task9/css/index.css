@@ -708,7 +708,7 @@ search-label, .wrapper__search--col2-left label, .wrapper__search--col3 label {
           border-bottom-width: 2px;
           border-bottom-color: white; }
       .wrapper__project--col1 .col1__content--table {
-        width: 490px;
+        width: 480px;
         margin-top: -1px;
         border: 1px solid #dddddd;
         border-radius: 0 0 5px 5px;
@@ -718,13 +718,16 @@ search-label, .wrapper__search--col2-left label, .wrapper__search--col3 label {
           display: table;
           clear: both; }
         .wrapper__project--col1 .col1__content--table table {
+          box-sizing: border-box;
           margin: auto auto;
           margin-top: 29px;
           border-collapse: collapse; }
           .wrapper__project--col1 .col1__content--table table tr td {
+            box-sizing: border-box;
             height: 29px;
-            width: 101px;
-            text-align: center;
+            width: 99px;
+            text-align: left;
+            padding-left: 16px;
             color: #53536b;
             font-size: 1.2rem; }
             .wrapper__project--col1 .col1__content--table table tr td.active, .wrapper__project--col1 .col1__content--table table tr td:hover {
@@ -1977,7 +1980,7 @@ search-label, .wrapper__search--col2-left label, .wrapper__search--col3 label {
           border-bottom-width: 2px;
           border-bottom-color: white; }
       .wrapper__project--col1 .col1__content--table {
-        width: 490px;
+        width: 480px;
         margin-top: -1px;
         border: 1px solid #dddddd;
         border-radius: 0 0 5px 5px;
@@ -1987,13 +1990,16 @@ search-label, .wrapper__search--col2-left label, .wrapper__search--col3 label {
           display: table;
           clear: both; }
         .wrapper__project--col1 .col1__content--table table {
+          box-sizing: border-box;
           margin: auto auto;
           margin-top: 29px;
           border-collapse: collapse; }
           .wrapper__project--col1 .col1__content--table table tr td {
+            box-sizing: border-box;
             height: 29px;
-            width: 101px;
-            text-align: center;
+            width: 99px;
+            text-align: left;
+            padding-left: 16px;
             color: #53536b;
             font-size: 1.2rem; }
             .wrapper__project--col1 .col1__content--table table tr td.active, .wrapper__project--col1 .col1__content--table table tr td:hover {

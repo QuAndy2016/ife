@@ -55,12 +55,14 @@
                         // display: -webkit-box;
                         // -webkit-box-pack: center;
                         // -webkit-box-align: center;
-                        width: 490px;
+                        width: 480px;
                         margin-top: -1px;
+                        // margin-left:90px;
                         border: 1px solid #dddddd;
                         border-radius: 0 0 5px 5px;
                         height: 251px;
                         table {
+                            box-sizing: border-box;
                             margin: auto auto;
                             margin: {
                                 top: 29px;
@@ -68,9 +70,13 @@
                             border-collapse: collapse;
                             tr {
                                 td {
+                                    box-sizing: border-box;
                                     height: 29px;
-                                    width: 101px;
-                                    text-align: center;
+                                    width: 99px;
+                                    text-align: left;
+                                    padding: {
+                                        left: 16px;
+                                    }
                                     color: #53536b;
                                     font-size: 1.2rem;
                                     &.active,
@@ -90,7 +96,7 @@
             float: right;
             width: 350px;
             height: 358px;
-            margin-left:7px;
+            margin-left: 7px;
             .col2 {
                 &__content {
                     height: 322px;
@@ -117,16 +123,16 @@
                             height: 146px;
                         }
                         &:nth-child(4) {
-                            width:inherit;
+                            width: inherit;
                             border: 0px;
-                            margin:{
-                                top:5px;
-                                left:-15px;
+                            margin: {
+                                top: 5px;
+                                left: -15px;
                             }
                             display: -webkit-box;
                             -webkit-box-align: center;
-                            button{
-                                margin-left:128px;
+                            button {
+                                margin-left: 128px;
                             }
                         }
                         div {

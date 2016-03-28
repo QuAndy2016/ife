@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  <title>表单验证</title>
+</head>
+
+<body>
+  <form class="" action="" onsubmit="return validate_form(this)" method="post">
+    <label for="name">名称:</label>
+    <input type="text" name="text" id="text" value="">
+    <button type="submit" name="button">验证</button>
+    <p id="tip">
+      必填，长度为4~16个字符
+    </p>
+  </form>
+</body>
+<script>
+  var text = document.getElementById("text");
+  var tip = document.getElementById("tip");
+
+  // 正则
+  var trimReg = /^\s+|\s+$/g; // 去除首尾空格
+  var chineseReg = /[\u4E00-\uFA29]|[\uE7C7-\uE7F3]/g;//用两个字符替换汉字
+  var lenReg = /^.{4,16}$/; // 长度验证
+
+  function validate(field) {
+    with(field) {
+      console.log(value);
+      var testStr = value.replace(trimReg, '').replace(chineseReg, '--');
+      if (!lenReg.test(testStr)) {
+        return false;
+      }
+    }
+  }
+
+  function validate_form(thisform) {
+    with(thisform) {
+      if (text.value=="") {
+        tip.innerText ="长度不能为空";
+        tip.style.color="#DE0012";
+        text.style.borderColor="#DE0012";
+      }
+      else if(validate(text) == false) {
+        tip.innerText ="长度为4~16个字符";
+        tip.style.color="#DE0012";
+        text.style.borderColor="#DE0012";
+      }
+       else {
+        tip.innerText ="名称格式正确";
+        tip.style.color="#60BB44";
+        text.style.borderColor="#60BB44";
+      }
+    }
+   return false;
+  }
+</script>
+
+</html>

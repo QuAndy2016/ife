@@ -27,6 +27,7 @@
   var lenReg = /^.{4,16}$/; // 长度验证
 
   function validate(field) {
+    console.log(field.value);
     with(field) {
       console.log(value);
       var testStr = value.replace(trimReg, '').replace(chineseReg, '--');
@@ -38,6 +39,8 @@
 
   function validate_form(thisform) {
     with(thisform) {
+      console.log(text.value);
+      console.log(text);
       if (text.value=="") {
         tip.innerText ="长度不能为空";
         tip.style.color="#DE0012";

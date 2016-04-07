@@ -23,7 +23,7 @@ form input{
     line-height: 38px;
     width: 300px;
 }
-form input:focus{
+input:focus{
   outline: none;
 }
 

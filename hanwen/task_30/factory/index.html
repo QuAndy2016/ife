@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+    function Car(model,year,miles) {
+        this.model = model;
+        this.year = year;
+        this.miles = miles;
+    }
+    Car.prototype.run = function () {
+        return this.model + " has done " + this.miles + " miles ";
+
+    };
+    var Benz = new Car('S350',2010,20000);
+    var Ford = new Car('Ford',2012,12000);
+
+    console.log(Benz.run());//"S350 has done 20000 miles "
+    console.log(Ford.run());
+</script>
+
+</html>

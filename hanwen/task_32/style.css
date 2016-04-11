@@ -1,0 +1,51 @@
+*{
+  /*text-align: center;*/
+  font-size: 16px;
+  font-family: "Times New Roman",Georgia,Serif;
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  width: 100%;
+}
+form{
+  text-align: right;
+  margin-top:100px;
+  width: 500px;
+  height: 40px;
+  line-height: 40px;
+}
+form label{
+  font-weight: bold;
+}
+form input{
+    height: 38px;
+    line-height: 38px;
+    width: 300px;
+}
+form input:focus{
+  outline: none;
+}
+
+form input {
+  text-align: left;
+  text-indent: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #CCC;
+}
+form button{
+  border:1px solid rgba(61, 111, 175, 1);
+  background-color:#2F79BA;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  height: 38px;
+  width: 60px;
+  cursor: pointer;
+}
+form p{
+  color: #CCC;
+  text-align: left;
+  margin-left: 200px;
+  visibility: hidden;
+}

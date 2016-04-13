@@ -1,0 +1,59 @@
+*{
+margin: 0;
+padding: 0;
+}
+body,
+html {
+    text-align: center;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /*width: 500px;*/
+}
+td {
+    width: 40px;
+    height: 40px;
+}
+tr:nth-child(n+2)>td:nth-child(n+2) {
+    border: 1px solid #ccc;
+    position: relative;
+}
+.box {
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box-left,
+.box-right {
+    width: 30px;
+    height: 40px;
+}
+.box-top,
+.box-bottom {
+    width: 40px;
+    height: 30px;
+}
+.box-left {
+    border-left: 10px solid blue;
+}
+.box-right {
+    border-right: 10px solid blue;
+}
+.box-bottom {
+    border-bottom: 10px solid blue;
+}
+.box-top {
+    border-top: 10px solid blue;
+}
+.input-hloder{
+    margin-bottom: 20px;
+}
+.input-hloder input {
+    height: 30px;
+}
